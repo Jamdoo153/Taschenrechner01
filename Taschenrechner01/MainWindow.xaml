@@ -15,5 +15,14 @@
                 Background="LightBlue"
                 Click="button1_Click"
                 Content="Taschenrechner"/>
+
+        <Button x:Name="button2"
+                Width="100"
+                Height="100"
+                Margin="150"
+                HorizontalAlignment="Left"
+                Background="LightBlue"
+                Click="button2_Click"
+                Content="Schätzspiel"/>
     </Grid>
 </Window>

@@ -1,5 +1,4 @@
-﻿using MyFristProject;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,26 +10,23 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace MyProject
+namespace MyFristProject
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaktionslogik für Schätzenspiel.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Schätzenspiel : Window
     {
-        public MainWindow()
+        public Schätzenspiel()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            TASCHENRECHNER taschenrechner = new TASCHENRECHNER();
-            taschenrechner.Show();
-            this.Close();
+
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
