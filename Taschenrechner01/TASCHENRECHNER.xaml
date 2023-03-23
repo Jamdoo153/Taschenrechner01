@@ -39,7 +39,8 @@
                 FontWeight="Bold"
                 Text="Nummer1"
                 >
-            </TextBlock><TextBlock
+            </TextBlock>
+            <TextBlock
                 x:Name="TextBlock2"
                 Width="100"
                 Margin="30"
@@ -49,10 +50,129 @@
                 Text="Nummer2"
                 >
             </TextBlock>
-            
-            
         </StackPanel>
-        
-        
+
+        <StackPanel                     
+            x:Name="StackPanel2"
+            Grid.Row="2"
+            Grid.Column="1"
+            Margin="220,0,0,0"
+            Orientation="Horizontal"
+            >
+            <TextBox
+                x:Name="textBox1"
+                Width="100"
+                Height="40"
+                Margin="30,0,0,0"
+                Padding="5"
+                FontFamily="Arial"
+                FontSize="15"
+                FontWeight="Bold"
+                Text=""
+                TextAlignment="Center">
+            </TextBox>
+
+            <TextBox
+                x:Name="textBox2"
+                Width="100"
+                Height="40"
+                Margin="30,0,0,0"
+                Padding="5"
+                FontFamily="Arial"
+                FontSize="15"
+                FontWeight="Bold"
+                Text=""
+                TextAlignment="Center">
+            </TextBox>
+        </StackPanel>
+
+        <TextBlock
+            x:Name="textBlock3"
+            Grid.Row="3"
+            Grid.Column="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontFamily="Arial"
+            FontSize="15"
+            FontWeight="Bold"
+            Text="="/>
+
+        <TextBlock
+            x:Name="textBlock4"
+            Grid.Row="4"
+            Grid.Column="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            FontFamily="Arial"
+            FontSize="15"
+            FontWeight="Bold"
+            Text="Ergebnis"/>
+
+        <TextBlock
+            x:Name="textBlock5"
+            Grid.Row="5"
+            Grid.Column="1"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Width="200"
+            Height="40"
+            Padding="5"
+            FontFamily="Arial"
+            FontSize="15"
+            FontWeight="Bold"
+            Background="DarkGreen"
+            Foreground="White"
+            Text=""/>
+
+        <StackPanel x:Name="stackPanel3"
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    Orientation="Horizontal">
+            <Button x:Name="button1"
+                    Width="150"
+                    Margin="30,0,0,0"
+                    Content="Addieren"
+                    Background="Blue"
+                    Foreground="White"
+                    FontFamily="Arial"
+                    FontSize="15"
+                    Click="button1_Click"/>
+
+            <Button x:Name="button2"
+                    Width="150"
+                    Margin="30,0,0,0"
+                    HorizontalAlignment="Center"
+                    Content="Subtrahiren"
+                    Background="Blue"
+                    Foreground="White"
+                    FontFamily="Arial"
+                    FontSize="15"
+                    Click="button2_Click"/>
+
+            <Button x:Name="button3"
+                    Width="150"
+                    Margin="30,0,0,0"
+                    HorizontalAlignment="Center"
+                    Content="Multiplizieren"
+                    Background="Blue"
+                    Foreground="White"
+                    FontFamily="Arial"
+                    FontSize="15"
+                    Click="button3_Click"/>
+
+            <Button x:Name="button4"
+                    Width="150"
+                    Margin="30,0,0,0"
+                    HorizontalAlignment="Center"
+                    Content="Addieren"
+                    Background="Blue"
+                    Foreground="White"
+                    FontFamily="Arial"
+                    FontSize="15"
+                    Click="button4_Click"/>
+
+        </StackPanel>
+                    
+
     </Grid>
 </Window>
