@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyFristProject;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Taschenrechner01
+namespace MyProject
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -23,6 +24,13 @@ namespace Taschenrechner01
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            TASCHENRECHNER taschenrechner = new TASCHENRECHNER();
+            taschenrechner.Show();
+            this.Close();
         }
     }
 }

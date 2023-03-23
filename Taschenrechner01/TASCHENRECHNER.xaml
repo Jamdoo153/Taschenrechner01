@@ -112,8 +112,6 @@
             x:Name="textBlock5"
             Grid.Row="5"
             Grid.Column="1"
-            HorizontalAlignment="Center"
-            VerticalAlignment="Center"
             Width="200"
             Height="40"
             Padding="5"
@@ -122,7 +120,7 @@
             FontWeight="Bold"
             Background="DarkGreen"
             Foreground="White"
-            Text=""/>
+            Text="" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
         <StackPanel x:Name="stackPanel3"
                     Grid.Row="6"
@@ -164,7 +162,7 @@
                     Width="150"
                     Margin="30,0,0,0"
                     HorizontalAlignment="Center"
-                    Content="Addieren"
+                    Content="Dividieren"
                     Background="Blue"
                     Foreground="White"
                     FontFamily="Arial"
