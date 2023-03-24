@@ -35,7 +35,9 @@ namespace MyProject
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-
+            Schätzenspiel schätzenspiel = new Schätzenspiel();
+            schätzenspiel.Show();
+            this.Close();
         }
     }
 }

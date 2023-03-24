@@ -49,7 +49,7 @@ namespace MyFristProject
 
         private bool pruefeErgebnis(int zufallZahl)
         {
-            int userEingabe = Convert.ToInt32(textBlock1.Text);
+            int userEingabe = Convert.ToInt32(textBox1.Text);
 
             if (zufallZahl != userEingabe)
             {
@@ -66,15 +66,18 @@ namespace MyFristProject
         {
             if (punktGewinn == false)
             {
-                image1.Source = new BitmapImage(new Uri(@"images/falsech.jpg", UriKind.Relative));
+                //MessageBox.Show("Falsch");
+                image1.Source = new BitmapImage(new Uri(@"C:\Users\Walke\source\Cshrap_WPF_XAML\TASCHENRECHNER\MyFristProject\Images\falsch.jpg", UriKind.Absolute));
                 image1.Visibility = Visibility.Visible;
             }
             else
             {
-                image1.Source = new BitmapImage(new Uri(@"images/richtig.jpg", UriKind.Relative));
+                //MessageBox.Show("Richti)");
+                image1.Source = new BitmapImage(new Uri(@"C:\\Users\\Walke\\source\\Cshrap_WPF_XAML\\TASCHENRECHNER\\MyFristProject\\Images\\richtig.jpg", UriKind.Absolute));
                 image1.Visibility = Visibility.Visible;
             }
         }
+
 
         private int aktualisiereLeben(bool punktGewinn)
         {
@@ -102,6 +105,8 @@ namespace MyFristProject
             else if (leben > 14) 
             {
                 MessageBox.Show("Du hast das Spiel gewonnen");
+                spielEnde=true;
+                image1.Visibility = Visibility.Hidden;
             }
             return spielEnde;
         }
