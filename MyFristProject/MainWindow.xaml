@@ -24,5 +24,15 @@
                 Background="LightBlue"
                 Click="button2_Click"
                 Content="Schätzspiel"/>
+
+        <Button
+                x:Name="button3"
+                Width="100"
+                Height="100"
+                Margin="300,0,0,0"
+                HorizontalAlignment="Left"
+                Background="LightBlue"
+                Click="button3_Click"
+                Content="Bildergalerie"/>
     </Grid>
 </Window>

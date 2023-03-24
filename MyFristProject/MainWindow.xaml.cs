@@ -39,5 +39,12 @@ namespace MyProject
             schätzenspiel.Show();
             this.Close();
         }
+
+        private void button3_Click(object sender, RoutedEventArgs e)
+        {
+            Bildergalerie bildergalerie = new Bildergalerie();
+            bildergalerie.Show();
+            this.Close();
+        }
     }
 }
