@@ -19,6 +19,12 @@ namespace MyFristProject
     /// </summary>
     public partial class Schätzenspiel : Window
     {
+        int untergrenze = 1;
+        int obergrenze = 10;
+        bool punktGewinn = false;
+        int leben = 10;      //Anzahl der Leben zu begin des Spiels
+        bool spieleStatus = false;
+
         public Schätzenspiel()
         {
             InitializeComponent();
@@ -26,12 +32,97 @@ namespace MyFristProject
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-
+            spieleSpiel();
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
+            neuStart(); // Diese Methode setzt die Lebenanzahl zurück
+        }
+        private int generiereZufallZahl(int untergrenze, int obergrenze)
+        {
+            int zufallZahl = 0;
+            Random random = new Random();
+            zufallZahl = random.Next(untergrenze, obergrenze); // Eine Zufallzahl zwischen 1-10 wird generiert
+            return zufallZahl;
+        }
 
+        private bool pruefeErgebnis(int zufallZahl)
+        {
+            int userEingabe = Convert.ToInt32(textBlock1.Text);
+
+            if (zufallZahl != userEingabe)
+            {
+                punktGewinn = false;
+            }
+            else
+            {
+                punktGewinn = true;
+            }
+            return punktGewinn;
+        }
+
+        private void erstelleBild(bool punktGewinn)
+        {
+            if (punktGewinn == false)
+            {
+                image1.Source = new BitmapImage(new Uri(@"images/falsech.jpg", UriKind.Relative));
+                image1.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                image1.Source = new BitmapImage(new Uri(@"images/richtig.jpg", UriKind.Relative));
+                image1.Visibility = Visibility.Visible;
+            }
+        }
+
+        private int aktualisiereLeben(bool punktGewinn)
+        {
+            if (punktGewinn == false)
+            {
+                leben -= 1;
+            }
+            else
+            {
+                leben += 5;
+            }
+            label2.Content = leben;
+            return leben;
+        }
+
+        private bool spielEnde(int leben)
+        {
+            bool spielEnde = false;
+            if (leben < 1)
+            {
+                MessageBox.Show("Du hast das Spiel verloren");
+                spielEnde = false;
+                image1.Visibility = Visibility.Hidden;
+            }
+            else if (leben > 14) 
+            {
+                MessageBox.Show("Du hast das Spiel gewonnen");
+            }
+            return spielEnde;
+        }
+
+
+        private void spieleSpiel()
+        {
+            int zufallZahl = generiereZufallZahl(untergrenze, obergrenze);
+            punktGewinn = pruefeErgebnis(zufallZahl);   // Zeigt falsch oder richtig als Bild an (je nach boolischen Wert)
+            erstelleBild(punktGewinn);                  // erstellt das dazu gehörigen Bild
+            textBlock4.Text = zufallZahl.ToString();            
+            leben = aktualisiereLeben(punktGewinn);     // gibt den aktuellen Leben an 
+            spieleStatus = spielEnde(leben);           // prüft, ob das Spiel zu beendet ist
+        }
+
+        private void neuStart()
+        {
+            textBox1.Text = "";
+            textBlock4.Text = "";
+            leben = 10;
+            label2.Content = leben;
         }
     }
 }
