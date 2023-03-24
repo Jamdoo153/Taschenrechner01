@@ -1,0 +1,201 @@
+﻿<Window x:Class="MyFristProject.StimmungBarometer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MyFristProject"
+        mc:Ignorable="d"
+        Title="StimmungBarometer" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock x:Name="textblock1"
+                   Grid.Row="0"
+                   Grid.Column="1"
+                   HorizontalAlignment="Center"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   Text="Kategorie"/>
+
+        <StackPanel x:Name="stackPanel1"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Orientation="Vertical">
+            <Slider x:Name="silder1"
+                        Margin="0,20,0,0"
+                        Background="Green"
+                        Cursor="Hand"
+                        Minimum="0"
+                        Maximum="100"
+                        LargeChange="10"
+                        SmallChange="0.5"
+                        TickFrequency="1"
+                        TickPlacement="TopLeft"/>
+
+            <TextBlock x:Name="textblock2"
+                       Margin="0,10,0,0"
+                       FontSize="20"
+                       Text ="{Binding ElementName=silder1, Path=Value}"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+        </StackPanel>
+
+
+        <StackPanel x:Name="stackPanel2"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    Orientation="Vertical">
+            <Slider x:Name="silder2"
+                        Margin="0,20,0,0"
+                        Background="red"
+                        Cursor="Pen"
+                        Minimum="0"
+                        Maximum="100"
+                        LargeChange="10"
+                        SmallChange="0.5"
+                        TickFrequency="1"
+                        TickPlacement="TopLeft"/>
+
+            <TextBlock x:Name="textblock3"
+                       Margin="0,10,0,0"
+                       FontSize="20"
+                       Text ="{Binding ElementName=silder2, Path=Value}"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel x:Name="stackPanel3"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    Orientation="Vertical">
+            <Slider x:Name="silder3"
+                        Margin="0,20,0,0"
+                        Background="Khaki"
+                        Cursor="Hand"
+                        Minimum="0"
+                        Maximum="100"
+                        LargeChange="10"
+                        SmallChange="0.5"
+                        TickFrequency="1"
+                        TickPlacement="TopLeft"/>
+
+            <TextBlock x:Name="textblock4"
+                       Margin="0,10,0,0"
+                       FontSize="20"
+                       Text ="{Binding ElementName=silder3, Path=Value}"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel x:Name="stackPanel4"
+                    Grid.Row="4
+                    "
+                    Grid.Column="1"
+                    Orientation="Vertical">
+            <Slider x:Name="silder4"
+                        Margin="0,20,0,0"
+                        Background="LawnGreen"
+                        Cursor="Hand"
+                        Minimum="0"
+                        Maximum="100"
+                        LargeChange="10"
+                        SmallChange="0.5"
+                        TickFrequency="1"
+                        TickPlacement="TopLeft"/>
+
+            <TextBlock x:Name="textblock5"
+                       Margin="0,10,0,0"
+                       FontSize="20"
+                       Text ="{Binding ElementName=silder4, Path=Value}"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <TextBlock x:Name="textblock6"
+                   Grid.Row="4"
+                   Grid.Column="3"
+                   FontSize="35"
+                   FontWeight="Bold"
+                   Text=""
+                   TextAlignment="Center"/>
+
+        <Image x:Name="image1"
+               Grid.Row="1"
+               Grid.Column="3"
+               Grid.RowSpan="3"
+               Margin="0,10"
+               Source="C:\Users\Walke\source\Cshrap_WPF_XAML\TASCHENRECHNER\MyFristProject\Images\question_mark.png"/>
+
+        <Label x:Name="label1"
+                Grid.Row="1"
+                Grid.Column="0"
+                Margin="10,20,0,0"
+                Content="Schlaf"
+                FontStyle="Italic"
+                FontWeight="Bold"
+                Foreground="SteelBlue"/>
+
+        <Label x:Name="label2"
+                Grid.Row="2"
+                Grid.Column="0"
+                Margin="10,20,0,0"
+                Content="Essen"
+                FontStyle="Italic"
+                FontWeight="Bold"
+                Foreground="SteelBlue"/>
+
+        <Label x:Name="label3"
+                Grid.Row="3"
+                Grid.Column="0"
+                Margin="10,20,0,0"
+                Content="Energie"
+                FontStyle="Italic"
+                FontWeight="Bold"
+                Foreground="SteelBlue"/>
+
+        <Label x:Name="label4"
+                Grid.Row="4"
+                Grid.Column="0"
+                Margin="10,20,0,0"
+                Content="Arbeit"
+                FontStyle="Italic"
+                FontWeight="Bold"
+                Foreground="SteelBlue"/>
+
+        <Button x:Name="button1"
+                Grid.Row="5"
+                Grid.Column="1"
+                Background="Lavender"
+                Click="button1_Click"
+                Content="Werte Stimmung aus"
+                FontSize="25"
+                FontWeight="Bold"
+                Foreground="Black"/>
+
+        <Button x:Name="button2"
+                Grid.Row="5"
+                Grid.Column="3"
+                Background="Lavender"
+                Click="button2_Click"
+                Content="Zurück setzen"
+                FontSize="25"
+                FontWeight="ExtraBold"
+                Foreground="Black"/>
+
+    </Grid>
+</Window>
