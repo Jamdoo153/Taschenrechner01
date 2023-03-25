@@ -26,39 +26,79 @@ namespace MyProject
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void button1_Click1_1(object sender, RoutedEventArgs e)
         {
             TASCHENRECHNER taschenrechner = new TASCHENRECHNER();
             taschenrechner.Show();
-            this.Close();
         }
 
-        private void button2_Click(object sender, RoutedEventArgs e)
+        private void button2_Click1_1(object sender, RoutedEventArgs e)
         {
             Schätzenspiel schätzenspiel = new Schätzenspiel();
             schätzenspiel.Show();
-            this.Close();
         }
 
-        private void button3_Click(object sender, RoutedEventArgs e)
+        private void button3_Click1_1(object sender, RoutedEventArgs e)
         {
             Bildergalerie bildergalerie = new Bildergalerie();
             bildergalerie.Show();
-            this.Close();
         }
 
-        private void button4_Click(object sender, RoutedEventArgs e)
+        private void button4_Click1(object sender, RoutedEventArgs e)
         {
             StimmungBarometer stimmungBarometer = new StimmungBarometer();
             stimmungBarometer.Show();
-            this.Close();
         }
 
-        private void button5_Click(object sender, RoutedEventArgs e)
+        private void button5_Click1_1(object sender, RoutedEventArgs e)
         {
             Terminplaner terminplaner = new Terminplaner();
             terminplaner.Show();
-            this.Close();
+        }
+
+        private void button1_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void button1_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+        private void button2_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void button2_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+        private void button3_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void button3_MouseLeave(object sender, MouseEventArgs e)
+        {
+
+        }
+        private void button4_MouseEnter_1(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void button4_MouseLeave_1(object sender, MouseEventArgs e)
+        {
+
+        }
+        private void button5_MouseEnter(object sender, MouseEventArgs e)
+        {
+
+        }
+        private void button5_MouseLeave(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }

@@ -7,53 +7,139 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button x:Name="button1"
-                Width="100"
-                Height="100"
-                Margin="10"
-                HorizontalAlignment="Left"
-                Background="LightBlue"
-                Click="button1_Click"
-                Content="Taschenrechner"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
 
-        <Button x:Name="button2"
-                Width="100"
-                Height="100"
-                Margin="150"
-                HorizontalAlignment="Left"
-                Background="LightBlue"
-                Click="button2_Click"
-                Content="Schätzspiel"/>
+        <Label
+            x:Name="label1"
+            Grid.Row="1"
+            Grid.Column="1"
+            Width="200"
+            Height="30"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Background="OrangeRed"
+            Content="Wähle deine Anwendung"
+            FontFamily="Ink Free"
+            FontWeight="Bold"
+            Foreground="White"
+            FontSize="18"/>
 
-        <Button
-                x:Name="button3"
-                Width="100"
-                Height="100"
-                Margin="300,0,0,0"
-                HorizontalAlignment="Left"
-                Background="LightBlue"
-                Click="button3_Click"
-                Content="Bildergalerie"/>
+        <StackPanel
+                x:Name="stackPanel1"
+                Grid.Row="0"
+                Grid.Column="0"
+                Orientation="Vertical">
+            <Image
+                    x:Name="image1"
+                    Height="150"
+                    Source="/App2.png"
+                    Stretch="Uniform"/>
+            <Button
+                    x:Name="button1"
+                    Margin="10,5,5,5"
+                    Background="Black"
+                    Click="button1_Click_1"
+                    Content="Öffne App"
+                    Foreground="White"/>
+                    <!--MouseEnter="button1_MouseEnter"
+                    MouseLeave="button1_MouseLeave"/>-->
+        </StackPanel>
 
-        <Button
-                x:Name="button4"
-                Width="100"
-                Height="100"
-                Margin="450,0,0,0"
-                HorizontalAlignment="Left"
-                Background="LightBlue"
-                Click="button4_Click"
-                Content="StimmungBaroMeter"/>
+        <StackPanel
+                x:Name="stackPanel2"
+                Grid.Row="0"
+                Grid.Column="1"
+                Orientation="Vertical">
+            <Image
+                    x:Name="image2"
+                    Height="150"
+                    Source="/App1.png"
+                    Stretch="Uniform"/>
+            <Button
+                    x:Name="button2"
+                    Margin="10,5,5,5"
+                    Background="Black"
+                    Click="button2_Click_1"
+                    Content="Öffne App"
+                    Foreground="White"/>
+                    <!--MouseEnter="button2_MouseEnter"
+                    MouseLeave="button2_MouseLeave"/>-->
+        </StackPanel>
+        <StackPanel
+                x:Name="stackPanel3"
+                Grid.Row="0"
+                Grid.Column="2"
+                Orientation="Vertical">
+            <Image
+                    x:Name="image3"
+                    Height="150"
+                    Source="/App3.png"
+                    Stretch="Uniform"/>
+            <Button
+                    x:Name="button3"
+                    Margin="10,5,5,5"
+                    Background="Black"
+                    Click="button3_Click_1"
+                    Content="Öffne App"
+                    Foreground="White"/>
+                    <!--ouseEnter="button3_MouseEnter"
+                    MouseLeave="button3_MouseLeave"/>-->
+        </StackPanel>
 
-        <Button
-                x:Name="button5"
-                Width="100"
-                Height="100"
-                Margin="600,0,0,0"
-                HorizontalAlignment="Left"
-                Background="LightBlue"
-                Click="button5_Click"
-                Content="Terminplaner"/>
+        <StackPanel
+                x:Name="stackPanel4"
+                Grid.Row="2"
+                Grid.Column="0"
+                Orientation="Vertical">
+            <Image
+                    x:Name="image4"
+                    Height="150"
+                    Source="/App4.png"
+                    Stretch="Uniform"/>
+            <Button
+                    x:Name="button4"
+                    Margin="10,5,5,5"
+                    Background="Black"
+                    Click="button4_Click"
+                    Content="Öffne App"
+                    Foreground="White"/>
+            <!--MouseEnter="button4_MouseEnter_1"
+                    MouseLeave="button4_MouseLeave_1"/>-->
+        </StackPanel>
+
+        <StackPanel
+                x:Name="stackPanel5"
+                Grid.Row="2"
+                Grid.Column="2"
+                Orientation="Vertical">
+            <Image
+                    x:Name="image5"
+                    Height="150"
+                    Source="/App5.png"
+                    Stretch="Uniform"/>
+            <Button
+                    x:Name="button5"
+                    Margin="10,5,5,5"
+                    Background="Black"
+                    Click="button5_Click_1"
+                    Content="Öffne App"
+                    Foreground="White"/>
+            <!--MouseEnter="button5_MouseEnter"
+                    MouseLeave="button5_MouseLeave"/>-->
+        </StackPanel>
+
+
 
     </Grid>
 </Window>

@@ -7,4 +7,20 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="App1.png" />
+    <None Remove="App2.png" />
+    <None Remove="App3.png" />
+    <None Remove="App4.png" />
+    <None Remove="App5.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="App1.png" />
+    <Resource Include="App2.png" />
+    <Resource Include="App3.png" />
+    <Resource Include="App4.png" />
+    <Resource Include="App5.png" />
+  </ItemGroup>
+
 </Project>
