@@ -46,5 +46,12 @@ namespace MyProject
             bildergalerie.Show();
             this.Close();
         }
+
+        private void button4_Click(object sender, RoutedEventArgs e)
+        {
+            StimmungBarometer stimmungBarometer = new StimmungBarometer();
+            stimmungBarometer.Show();
+            this.Close();
+        }
     }
 }
