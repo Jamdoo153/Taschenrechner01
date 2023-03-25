@@ -45,5 +45,15 @@
                 Click="button4_Click"
                 Content="StimmungBaroMeter"/>
 
+        <Button
+                x:Name="button5"
+                Width="100"
+                Height="100"
+                Margin="600,0,0,0"
+                HorizontalAlignment="Left"
+                Background="LightBlue"
+                Click="button5_Click"
+                Content="Terminplaner"/>
+
     </Grid>
 </Window>

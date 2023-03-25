@@ -53,5 +53,12 @@ namespace MyProject
             stimmungBarometer.Show();
             this.Close();
         }
+
+        private void button5_Click(object sender, RoutedEventArgs e)
+        {
+            Terminplaner terminplaner = new Terminplaner();
+            terminplaner.Show();
+            this.Close();
+        }
     }
 }
