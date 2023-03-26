@@ -46,14 +46,12 @@
                     Source="/App2.png"
                     Stretch="Uniform"/>
             <Button
-                    x:Name="button1"
+                    x:Name="Button1"
                     Margin="10,5,5,5"
                     Background="Black"
-                    Click="button1_Click_1"
+                    Click="Button1_Click_1"
                     Content="Öffne App"
                     Foreground="White"/>
-                    <!--MouseEnter="button1_MouseEnter"
-                    MouseLeave="button1_MouseLeave"/>-->
         </StackPanel>
 
         <StackPanel
@@ -67,14 +65,12 @@
                     Source="/App1.png"
                     Stretch="Uniform"/>
             <Button
-                    x:Name="button2"
+                    x:Name="Button2"
                     Margin="10,5,5,5"
                     Background="Black"
-                    Click="button2_Click_1"
+                    Click="Button2_Click_1"
                     Content="Öffne App"
                     Foreground="White"/>
-                    <!--MouseEnter="button2_MouseEnter"
-                    MouseLeave="button2_MouseLeave"/>-->
         </StackPanel>
         <StackPanel
                 x:Name="stackPanel3"
@@ -87,14 +83,12 @@
                     Source="/App3.png"
                     Stretch="Uniform"/>
             <Button
-                    x:Name="button3"
+                    x:Name="Button3"
                     Margin="10,5,5,5"
                     Background="Black"
-                    Click="button3_Click_1"
+                    Click="Button3_Click_1"
                     Content="Öffne App"
                     Foreground="White"/>
-                    <!--ouseEnter="button3_MouseEnter"
-                    MouseLeave="button3_MouseLeave"/>-->
         </StackPanel>
 
         <StackPanel
@@ -108,14 +102,12 @@
                     Source="/App4.png"
                     Stretch="Uniform"/>
             <Button
-                    x:Name="button4"
+                    x:Name="Button4"
                     Margin="10,5,5,5"
                     Background="Black"
-                    Click="button4_Click"
+                    Click="Button4_Click"
                     Content="Öffne App"
                     Foreground="White"/>
-            <!--MouseEnter="button4_MouseEnter_1"
-                    MouseLeave="button4_MouseLeave_1"/>-->
         </StackPanel>
 
         <StackPanel
@@ -129,14 +121,12 @@
                     Source="/App5.png"
                     Stretch="Uniform"/>
             <Button
-                    x:Name="button5"
+                    x:Name="Button5"
                     Margin="10,5,5,5"
                     Background="Black"
-                    Click="button5_Click_1"
+                    Click="Button5_Click_1"
                     Content="Öffne App"
                     Foreground="White"/>
-            <!--MouseEnter="button5_MouseEnter"
-                    MouseLeave="button5_MouseLeave"/>-->
         </StackPanel>
 
 
